@@ -30,7 +30,7 @@ function HogCard({ hog, handleDelete, handleHide }) {
           Hide
         </Button>
         <Button size="small" onClick={() => handleDelete(hog.id)}>
-          Delete
+          Permenantly Delete Forever
         </Button>
       </CardActions>
     </Card>

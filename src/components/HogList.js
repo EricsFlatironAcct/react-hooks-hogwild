@@ -2,7 +2,7 @@ import React from "react";
 import HogCard from "./HogCard";
 function Hoglist({ hogArr, setHogArr, onlyShowGreased }) {
   function handleDelete(hogID) {
-    setHogArr([...hogArr.toSpliced(hogID, 1)]);
+    setHogArr([...hogArr.filter((hog) => hog.id !== hogID)]);
   }
   function handleHide(hog) {
     const updatedPigArr = [
